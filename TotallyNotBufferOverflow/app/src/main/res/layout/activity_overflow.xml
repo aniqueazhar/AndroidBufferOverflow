@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.android.overflow.buffer.totallynotbufferoverflow.OverflowActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/canary_button"
+        android:layout_marginTop="50dp"
+        android:text="Find canary"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#01bc0a"/>
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/canary_button"
+        android:id="@+id/canary_layout"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canary: "
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/canary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0x????????"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+
+
+    <SeekBar
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:id="@+id/hacking_seekbar"
+        android:progressDrawable="@drawable/progress"
+        android:thumb="@android:color/transparent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/canary_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignEnd="@+id/canary_layout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hacking_txt"
+            android:text="HACKING IN PROGRESS"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:textColor="#01bc0a"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/hacking_dot"
+            android:text="   "
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:visibility="visible"
+            android:textSize="30sp"
+            android:textColor="#01bc0a"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

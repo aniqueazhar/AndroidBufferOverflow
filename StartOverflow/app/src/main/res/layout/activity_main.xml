@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#607D8B"
+    tools:context="com.android.overflow.buffer.startoverflow.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/buffer_text"
+        android:layout_height="wrap_content"
+        android:text="Start Overflow!"
+        android:layout_marginTop="20dp"
+        android:textColor="#ff9705"
+        android:background="#263238"
+        android:padding="10dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple Overflow!"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/buffer_text"
+        android:textColor="#1b2328"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>
