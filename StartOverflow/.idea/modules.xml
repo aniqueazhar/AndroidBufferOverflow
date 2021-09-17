@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/StartOverflow.iml" filepath="$PROJECT_DIR$/StartOverflow.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StartOverflow.iml" filepath="$PROJECT_DIR$/.idea/modules/StartOverflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/StartOverflow.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/StartOverflow.app.iml" />
     </modules>
   </component>
 </project>
