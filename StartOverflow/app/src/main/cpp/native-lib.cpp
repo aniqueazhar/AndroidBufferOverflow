@@ -7,7 +7,7 @@
 
 #pragma intrinsic(_ReturnAddress)
 
-JNIEXPORT void  JNICALL
+extern "C" JNIEXPORT void  JNICALL
 Java_com_android_overflow_buffer_startoverflow_MainActivity_getWin(JNIEnv *env, jobject obj) {
     __android_log_print(ANDROID_LOG_DEBUG, "WINNING", "YOU WIN!");
 }
